@@ -1,0 +1,41 @@
+.breadcrumb-nav {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  padding: 0.75rem 0;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0 0.5rem;
+}
+
+.breadcrumb-item a {
+  color: #0d6efd;
+  transition: color 0.2s;
+}
+
+.breadcrumb-item a:hover {
+  color: #0a58ca;
+}
+
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 0.85rem;
+  }
+  
+  .breadcrumb-item + .breadcrumb-item::before {
+    padding: 0 0.35rem;
+  }
+}

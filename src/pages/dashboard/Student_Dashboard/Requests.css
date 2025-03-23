@@ -1,0 +1,79 @@
+.request-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.request-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.request-list {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.badge {
+  font-weight: 500;
+  padding: 0.5em 1em;
+  text-transform: capitalize;
+}
+
+.badge.bg-info {
+  background-color: #e3f2fd !important;
+  color: #0d47a1;
+}
+
+.badge.bg-success {
+  background-color: #e8f5e9 !important;
+  color: #2e7d32;
+}
+
+.badge.bg-danger {
+  background-color: #ffebee !important;
+  color: #c62828;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+.btn-primary:hover {
+  background-color: #1565c0;
+  border-color: #1565c0;
+}
+
+.btn-outline-danger {
+  color: #d32f2f;
+  border-color: #d32f2f;
+}
+
+.btn-outline-danger:hover {
+  background-color: #d32f2f;
+  border-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .request-card .row {
+    text-align: center;
+  }
+
+  .request-card .d-flex {
+    justify-content: center;
+  }
+
+  .request-card .text-md-end {
+    text-align: center !important;
+  }
+
+  .request-card .justify-content-md-end {
+    justify-content: center !important;
+  }
+}
