@@ -4,8 +4,10 @@ node_modules/
 /.pnp
 .pnp.js
 package-lock.json
+package.json
 yarn.lock
 pnpm-lock.yaml
+vite.config.js
 
 # Package manager files
 .npm
