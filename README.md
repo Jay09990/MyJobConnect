@@ -1,99 +1,92 @@
-# SGH Hackathon Project - MyJobConnect
-
-MyJobConnect is a web-based platform designed to bridge the gap between skilled students from tier-3 colleges and industry partners. This project aims to provide an efficient system for job opportunities, fostering collaboration between students and companies.
-
-## 📁 Project Structure
-
-```
-Frontend_react/
-├── node_modules/            # Project dependencies
-├── public/                  # Static public assets
-├── src/                     # Source code
-│   ├── assets/              # Images, logos, and static files
-│   ├── components/          # Reusable UI components
-│   ├── context/             # React context for global state management
-│   ├── pages/               # Application pages
-│   │   ├── dashboard/       # Dashboard with sub-sections
-│   │   │    ├── college/    # College-related views
-│   │   │    ├── company/    # Company-related views
-│   │   │    └── Student_Dashboard/ # Student-specific dashboard
-│   │   ├── Landing/         # Landing page
-│   │   ├── login/           # Login page
-│   │   └── register/        # Registration page
-│   └── routes/              # Application routes (React Router)
-├── .gitignore               # Ignored files for Git
-├── eslint.config.js         # ESLint configuration
-├── index.html               # Main HTML file
-├── index.css                # Global CSS
-└── main.jsx                 # Application entry point
-```
-
-## 🚀 Features
-
-- **User Authentication**: Secure login and registration for students and companies.
-- **Dashboard**: Separate dashboards for colleges, companies, and students.
-- **Collaboration**: A platform to facilitate collaboration between colleges and industry partners.
-- **Modern UI**: Built using React and Tailwind CSS for a responsive and sleek interface.
-
-## 🛠️ Installation and Setup
-
+# JobConnect - Frontend
+JobConnect is a comprehensive platform that bridges the gap between students, colleges, and companies, creating a seamless ecosystem for job opportunities and collaborations.
+## Overview
+JobConnect's frontend is built with React and provides an intuitive interface for:
+- Students to manage their profiles and job applications
+- Companies to post jobs and manage candidates
+- Colleges to oversee student placements and company collaborations
+## Key Features
+- **User Authentication**
+  - Role-based access (Students, Companies, Colleges)
+  - Secure login and registration
+  - Profile management
+- **Student Features**
+  - Profile creation and management
+  - Job application tracking
+  - Document uploads (Resume, etc.)
+  - Application status monitoring
+- **Company Features**
+  - Job posting and management
+  - Candidate screening
+  - Application processing
+  - Company profile management
+- **College Features**
+  - Student directory management
+  - Company collaboration oversight
+  - Request processing
+  - College profile management
+## Technology Stack
+- **Core Framework**: React 19.0.0
+- **Routing**: React Router DOM 7.4.0
+- **UI Framework**: Bootstrap 5.3.3
+- **Build Tool**: Vite 6.2.2
+- **Icons**: React Icons 5.5.0
+- **State Management**: Context API
+- **Development Tools**:
+  - ESLint for code quality
+  - SASS for styling
+  - Hot Module Replacement (HMR)
+## Getting Started
+### Prerequisites
+- Node.js (Latest LTS version recommended)
+- npm or yarn package manager
+### Installation
 1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/yourusername/MyJobConnect.git
-    cd MyJobConnect/Frontend_react
-    ```
+    git clone <repository-url>
 
 2. Install dependencies:
-
-    ```bash
     npm install
-    ```
 
 3. Start the development server:
-
-    ```bash
     npm run dev
-    ```
 
-4. Access the application at:
+4. Build for production:
+    npm run build
 
-    ```
-    http://localhost:5173
-    ```
+### Environment Setup
+Create a `.env` file in the root directory and add necessary environment variables: VITE_API_URL=your_api_url_here
 
-## 📌 Contribution Guidelines
+## Project Structure
 
-1. Fork the repository.
-2. Create a new branch:
+Frontend_react/
+├── src/
+│   ├── components/     # Reusable components
+│   ├── context/       # Context providers
+│   ├── pages/         # Page components
+│   ├── routes/        # Route configurations
+│   └── assets/        # Static assets
+├── public/            # Public assets
+└── vite.config.js     # Vite configuration
 
-    ```bash
-    git checkout -b feature/your-feature
-    ```
-
-3. Commit your changes:
-
-    ```bash
-    git commit -m "Add your feature"
-    ```
-
-4. Push to your branch:
-
-    ```bash
-    git push origin feature/your-feature
-    ```
-
-5. Open a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License. See the LICENSE file for more information.
-
-## 📧 Contact
-
-For questions or collaboration, reach out via GitHub Issues or email.
-
----
-
-Built with ❤️ for SGH Hackathon 2025!
-
+## Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+## Troubleshooting
+Common issues and their solutions:
+1. **Build Errors**
+   - Clear the cache: `npm run clean`
+   - Delete node_modules and reinstall
+2. **Runtime Errors**
+   - Check console for error messages
+   - Verify environment variables
+   - Ensure API endpoints are accessible
+## License
+This project is licensed under the ISC License - see the LICENSE file for details.
+## Support
+For support, please:
+- Open an issue on GitHub
+- Contact the development team
+- Check the documentation
