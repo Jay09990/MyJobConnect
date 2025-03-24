@@ -60,7 +60,7 @@ Create a `.env` file in the root directory and add necessary environment variabl
 
 - Frontend_react/
 - ├── src/
-- │   ├── assets/│   ├── assets/
+- │   ├── assets/
 - │   │   ├── images/
 - │   │   │   └── default-avatar.png
 - │   │   └── UI/
