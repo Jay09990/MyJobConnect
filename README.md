@@ -60,13 +60,68 @@ Create a `.env` file in the root directory and add necessary environment variabl
 
 Frontend_react/
 ├── src/
-│   ├── components/     # Reusable components
-│   ├── context/       # Context providers
-│   ├── pages/         # Page components
-│   ├── routes/        # Route configurations
-│   └── assets/        # Static assets
-├── public/            # Public assets
-└── vite.config.js     # Vite configuration
+│   ├── assets/
+│   │   ├── images/
+│   │   │   └── default-avatar.png
+│   │   └── UI/
+│   │       ├── college.svg
+│   │       ├── Company.svg
+│   │       ├── home_page_image.png
+│   │       └── tick_mark.svg
+│   ├── components/
+│   │   ├── Breadcrumb/
+│   │   │   ├── Breadcrumb.jsx
+│   │   │   └── Breadcrumb.css
+│   │   ├── Footer/
+│   │   │   └── Footer.jsx
+│   │   ├── Navbar/
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Navbar.css
+│   │   └── Sidebar/
+│   │       ├── Sidebar.jsx
+│   │       └── Sidebar.css
+│   ├── context/
+│   │   └── AuthContext.jsx
+│   ├── pages/
+│   │   ├── dashboard/
+│   │   │   ├── college/
+│   │   │   │   ├── college-dashboard.jsx
+│   │   │   │   ├── CollegeDashboard.css
+│   │   │   │   ├── companies.jsx
+│   │   │   │   ├── requests.jsx
+│   │   │   │   ├── settings.jsx
+│   │   │   │   └── students.jsx
+│   │   │   ├── company/
+│   │   │   │   ├── CompanyDashboard.jsx
+│   │   │   │   ├── CompanyDashboard.css
+│   │   │   │   ├── PostJob.jsx
+│   │   │   │   └── PostJob.css
+│   │   │   └── Student_Dashboard/
+│   │   │       ├── StudentDashboard.jsx
+│   │   │       ├── StudentDashboard.css
+│   │   │       ├── Profile.jsx
+│   │   │       ├── Requests.jsx
+│   │   │       └── Requests.css
+│   │   ├── Landing/
+│   │   │   ├── Landing_page.jsx
+│   │   │   ├── HeroSection.jsx
+│   │   │   ├── HowItWorks.jsx
+│   │   │   └── PlatformFeatures.jsx
+│   │   ├── login/
+│   │   │   └── Login.jsx
+│   │   └── register/
+│   │       └── Register.jsx
+│   ├── routes/
+│   │   └── AppRoutes.jsx
+│   ├── index.css
+│   ├── main.jsx
+│   └── App.jsx
+├── public/
+│   └── vite.svg
+├── index.html
+├── package.json
+├── vite.config.js
+└── eslint.config.js
 
 ## Contributing
 1. Fork the repository
