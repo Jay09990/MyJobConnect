@@ -26,16 +26,20 @@ JobConnect's frontend is built with React and provides an intuitive interface fo
   - Request processing
   - College profile management
 ## Technology Stack
-- **Core Framework**: React 19.0.0
-- **Routing**: React Router DOM 7.4.0
-- **UI Framework**: Bootstrap 5.3.3
-- **Build Tool**: Vite 6.2.2
-- **Icons**: React Icons 5.5.0
-- **State Management**: Context API
-- **Development Tools**:
-  - ESLint for code quality
-  - SASS for styling
-  - Hot Module Replacement (HMR)
+ **Core Framework**:
+- react@19.0.0 - The main React library
+**Routing**:
+- react-router-dom@7.4.0 - For handling routing in the React application
+ **UI Framework and Icons**:
+- bootstrap@5.3.3 - Bootstrap UI framework
+- react-icons@5.5.0 - React Icons library
+- bootstrap-icons@1.11.3 - Bootstrap Icons package
+- @popperjs/core@2.11.8 - Required for Bootstrap tooltips and popovers
+ **Build Tool**:
+- vite@6.2.2 - Build tool and development server
+ **Development Tools**:
+- eslint@9.21.0 - For code linting
+- sass@1.86.0 - For SASS/SCSS styling
 ## Getting Started
 ### Prerequisites
 - Node.js (Latest LTS version recommended)
